@@ -5,6 +5,7 @@ import './App.css'
 import HeroPage from './components/HeroPage'
 import Navbar from './components/Navbar'
 import Connections from './components/Connections'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <HeroPage />
       <Connections />
+      <Footer />
     </>
   )
 }
