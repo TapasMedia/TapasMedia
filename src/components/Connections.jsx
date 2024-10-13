@@ -1,23 +1,32 @@
 import React, { forwardRef, useRef } from "react";
-import Particles from './ui/particles';
-import { cn } from '../lib/utils';
-import DotPattern from './ui/dot-pattern';
-import { AnimatedBeam } from './ui/animated-beam';
+import Particles from "./ui/particles";
+import { cn } from "../lib/utils";
+import DotPattern from "./ui/dot-pattern";
+import { AnimatedBeam } from "./ui/animated-beam";
 
- import { FaGoogleDrive } from "react-icons/fa";
- import { SiGoogledocs } from "react-icons/si";
- import { RiNotionFill } from "react-icons/ri";
- import { PiOpenAiLogo } from "react-icons/pi";
- import { TbBrandZapier } from "react-icons/tb";
+import { FaGoogleDrive } from "react-icons/fa";
+import { SiGoogledocs } from "react-icons/si";
+import { RiNotionFill } from "react-icons/ri";
+import { PiOpenAiLogo } from "react-icons/pi";
+import { TbBrandZapier } from "react-icons/tb";
 import { FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
 
+import {
+  brianKouhi,
+  conceptTalk,
+  kamalesshBarariya,
+  sadhana,
+  tapasMedia,
+  tathastu,
+  vedology,
+} from "../assets/logo";
 
 const Circle = forwardRef(({ className, children }, ref) => {
   return (
     <div
       ref={ref}
       className={cn(
-        "z-10 flex text-3xl size-20 items-center justify-center rounded-full border-2 bg-white p-2 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+        "z-10 flex text-3xl size-24 items-center justify-center rounded-full border-2 bg-white shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
         className
       )}
     >
@@ -26,12 +35,9 @@ const Circle = forwardRef(({ className, children }, ref) => {
   );
 });
 
- 
 Circle.displayName = "Circle";
- 
 
 const Connections = () => {
-
   const containerRef = useRef(null);
   const div1Ref = useRef(null);
   const div2Ref = useRef(null);
@@ -41,8 +47,6 @@ const Connections = () => {
   const div6Ref = useRef(null);
   const div7Ref = useRef(null);
 
-
-  
   return (
     <div className="relative w-screen bg-slate-950">
       <DotPattern
@@ -58,29 +62,52 @@ const Connections = () => {
         <div className="flex size-full flex-col max-w-3xl max-h-[50vh] items-stretch justify-between gap-10">
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div1Ref}>
-              <FaGoogleDrive />
+              {/* <FaGoogleDrive /> */}
+              <img
+                className="rounded-full"
+                src={brianKouhi}
+                alt="brian-kouhi"
+              />
             </Circle>
             <Circle ref={div5Ref}>
-              <SiGoogledocs />
+              <img
+                className="rounded-full"
+                src={kamalesshBarariya}
+                alt="kamalessh-barariya"
+              />
+              {/* <SiGoogledocs /> */}
             </Circle>
           </div>
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div2Ref}>
-              <RiNotionFill />
+              <img
+                className="rounded-full"
+                src={conceptTalk}
+                alt="concept-talk"
+              />
+              {/* <RiNotionFill /> */}
             </Circle>
-            <Circle ref={div4Ref} className="size-24 text-5xl">
-              <PiOpenAiLogo />
+            <Circle ref={div4Ref} className="size-28 text-5xl">
+              <img
+                className="rounded-full"
+                src={tapasMedia}
+                alt="tapas-media"
+              />
+              {/* <PiOpenAiLogo /> */}
             </Circle>
             <Circle ref={div6Ref}>
-              <TbBrandZapier />
+              <img className="rounded-full" src={sadhana} alt="sadhana" />
+              {/* <TbBrandZapier /> */}
             </Circle>
           </div>
           <div className="flex flex-row items-center justify-between">
             <Circle ref={div3Ref}>
-              <FaWhatsapp />
+              <img className="rounded-full" src={tathastu} alt="tathastu" />
+              {/* <FaWhatsapp /> */}
             </Circle>
             <Circle ref={div7Ref}>
-              <FaFacebookMessenger />
+              <img className="rounded-full" src={vedology} alt="vedology" />
+              {/* <FaFacebookMessenger /> */}
             </Circle>
           </div>
         </div>
@@ -141,6 +168,6 @@ const Connections = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Connections
+export default Connections;
