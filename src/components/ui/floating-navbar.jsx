@@ -6,6 +6,8 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "../../lib/utils";
+import { ShineBorder } from "./shine-border";
+import { ShimmerButton } from "./shimmer-button";
 
 export const FloatingNav = ({ navItems, className }) => {
   const { scrollYProgress } = useScroll();
@@ -50,15 +52,16 @@ export const FloatingNav = ({ navItems, className }) => {
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative dark:text-neutral-50 px-4 py-2 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                "relative dark:text-neutral-50 px-4 py-4 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
               <span className="hidden sm:block lg:text-lg">{navItem.name}</span>
             </a>
           ))}
+
           {visible && (
-            <motion.button
+            <motion.div
               initial={{
                 opacity: 0,
                 x: 50,
@@ -70,11 +73,21 @@ export const FloatingNav = ({ navItems, className }) => {
               transition={{
                 duration: 0.5,
               }}
-              className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
+              className={cn(
+                "flex max-w-fit right-0  top-9 inset-x-0 mx-auto  z-[500] items-center justify-center space-x-4",
+                
+              )}
             >
-              <span className="lg:text-lg">Join Us</span>
-              <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-            </motion.button>
+              <ShimmerButton
+                className="shadow-2xl "
+                shimmerColor={["#0ea5e9", "#FE8FB5", "#FFBE7B"]}
+                shimmerSize="0.20em"
+              >
+                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg hover:border hover:border-collapse">
+                  Join Us
+                </span>
+              </ShimmerButton>
+            </motion.div>
           )}
         </motion.div>
         <motion.div
@@ -94,10 +107,15 @@ export const FloatingNav = ({ navItems, className }) => {
             className
           )}
         >
-          <button className="border font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-            <span className="lg:text-lg">Join Us</span>
-            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-          </button>
+          <ShimmerButton
+            className="shadow-2xl"
+            shimmerColor={["#0ea5e9", "#FE8FB5", "#FFBE7B"]}
+            shimmerSize="0.20em"
+          >
+            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg hover:border hover:border-collapse">
+              Join Us
+            </span>
+          </ShimmerButton>
         </motion.div>
       </div>
     </AnimatePresence>

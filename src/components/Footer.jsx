@@ -12,26 +12,26 @@ const Footer = () => {
     <section className="bg-white">
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
-          <div class="px-5 py-2">
+          <div className="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+              className="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Privacy Policy
             </a>
           </div>
-          <div class="px-5 py-2">
+          <div className="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+              className="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Refund Policy
             </a>
           </div>
-          <div class="px-5 py-2">
+          <div className="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+              className="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Terms of Use
             </a>
@@ -72,11 +72,11 @@ const Icons = {
       xmlns="http://www.w3.org/2000/svg"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         <defs>
@@ -87,8 +87,8 @@ const Icons = {
             r="3263.54"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".09" stop-color="#fa8f21"></stop>
-            <stop offset=".78" stop-color="#d82d7e"></stop>
+            <stop offset=".09" stopColor="#fa8f21"></stop>
+            <stop offset=".78" stopColor="#d82d7e"></stop>
           </radialGradient>
           <radialGradient
             id="1"
@@ -97,8 +97,8 @@ const Icons = {
             r="2572.12"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop>
-            <stop offset="1" stop-color="#8c3aaa"></stop>
+            <stop offset=".64" stopColor="#8c3aaa" stopOpacity="0"></stop>
+            <stop offset="1" stopColor="#8c3aaa"></stop>
           </radialGradient>
         </defs>
         <path
@@ -118,16 +118,16 @@ const Icons = {
       version="1.1"
       id="Icons"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 32 32"
-      xml:space="preserve"
+      xmlSpace="preserve"
       stroke="#4b98d2"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -140,14 +140,14 @@ const Icons = {
       viewBox="0 -7 48 48"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -156,9 +156,9 @@ const Icons = {
         <g
           id="Icons"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           {" "}
           <g
@@ -183,14 +183,14 @@ const Icons = {
       viewBox="0 -4 48 48"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       fill="#000000"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -199,9 +199,9 @@ const Icons = {
         <g
           id="Icons"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           {" "}
           <g
