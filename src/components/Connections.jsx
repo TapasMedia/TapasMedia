@@ -60,7 +60,7 @@ const Connections = () => {
         />
 
         <div
-          className="relative flex h-[80vh] w-full items-center text-black justify-center overflow-hidden rounded-lg bg-background p-10 md:shadow-xl"
+          className="relative flex h-[80vh] w-full items-center text-black justify-center overflow-hidden rounded-lg bg-background pb-10 md:shadow-xl"
           ref={containerRef}
         >
           <div className="flex size-full flex-col max-w-3xl max-h-[50vh] items-stretch justify-between gap-10">

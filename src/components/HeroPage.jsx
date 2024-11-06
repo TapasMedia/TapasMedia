@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { LampContainer } from "./ui/lamps";
 import Particles from "./ui/particles";
 import { ShimmerButton } from "./ui/shimmer-button";
-import JoinButton from "./ui/JoinButton";
+import JoinButton from "./ui/custom/JoinButton";
 
 const HeroPage = () => {
   return (

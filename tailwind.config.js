@@ -19,12 +19,27 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "fira-sans": ['"Fira Sans"', "sans-serif"],
+        Cambay: ['"Cambay"', "sans-serif"],
+        Hind: ['"Hind"', "sans-serif"],
+      },
       animation: {
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "shimmer-slide":
           "shimmer-slide var(--speed) ease-in-out infinite alternate",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
       },
       keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
         "spin-around": {
           "0%": {
             transform: "translateZ(0) rotate(0)",
