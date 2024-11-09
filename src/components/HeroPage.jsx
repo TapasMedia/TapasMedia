@@ -7,7 +7,7 @@ import JoinButton from "./ui/custom/JoinButton";
 
 const HeroPage = () => {
   return (
-    <div className="relative w-screen h-screen">
+    <div id="home" className="relative w-screen h-screen">
       <Particles
         className="absolute inset-0 z-10"
         quantity={150}
@@ -24,9 +24,13 @@ const HeroPage = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl  font-medium tracking-tight text-transparent sm:text-5xl md:text-7xl"
         >
-          Unlock the Power of Video <br /> to Amplify Your Brand
+          Unlock the Power of Video <br /> to Amplify {" "}
+          <span className="font-bold text-blue-700">
+          Your Brand
+
+          </span>
         </motion.h1>
 
         <motion.div
@@ -37,7 +41,7 @@ const HeroPage = () => {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="font-semibold text-lg w-[50vw] text-center"
+          className="font-semibold text-sm md:text-lg  w-[90vw] sm:w-[70vw] lg:w-[50vw]  text-center"
         >
           From scroll-stopping edits to full-scale video strategies, we
           transform your{" "}

@@ -5,6 +5,7 @@ import sadhana from "./sadhana.jpg";
 import tapasMedia from "./tapasMedia.png";
 import tathastu from "./tathastu.jpg";
 import vedology from "./vedology.jpg";
+import arjun from "./arjunpfp.jpg";
 
 export {
   brianKouhi,
@@ -14,4 +15,5 @@ export {
   tapasMedia,
   tathastu,
   vedology,
+  arjun
 };

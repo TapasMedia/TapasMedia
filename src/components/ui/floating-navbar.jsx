@@ -74,14 +74,15 @@ export const FloatingNav = ({ navItems, className }) => {
                 duration: 0.5,
               }}
               className={cn(
-                "flex max-w-fit right-0  top-9 inset-x-0 mx-auto  z-[500] items-center justify-center space-x-4",
-                
+                "flex max-w-fit right-0  top-9 inset-x-0 mx-auto  z-[500] items-center justify-center space-x-4"
               )}
             >
               <ShimmerButton
-                className="shadow-2xl "
+                className="shadow-2xl transition-al
+                      l duration-300"
                 shimmerColor={["#0ea5e9", "#FE8FB5", "#FFBE7B"]}
                 shimmerSize="0.20em"
+                onClick={() => (window.location.href = "/#subscribe")}
               >
                 <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg hover:border hover:border-collapse">
                   Join Us
@@ -96,7 +97,13 @@ export const FloatingNav = ({ navItems, className }) => {
             x: -100,
           }}
           animate={{
-            x: visible ? 0 : 500,
+            x: visible
+              ? 0
+              : window.innerWidth >= 1024
+              ? 500
+              : window.innerWidth >= 768
+              ? 350
+              : 500,
             opacity: visible ? 0 : 1,
           }}
           transition={{
@@ -108,9 +115,11 @@ export const FloatingNav = ({ navItems, className }) => {
           )}
         >
           <ShimmerButton
-            className="shadow-2xl"
+            className="shadow-2xl transition-al
+                      l duration-300"
             shimmerColor={["#0ea5e9", "#FE8FB5", "#FFBE7B"]}
             shimmerSize="0.20em"
+            onClick={() => (window.location.href = "/#subscribe")}
           >
             <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg hover:border hover:border-collapse">
               Join Us

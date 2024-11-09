@@ -9,12 +9,16 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
+import { beats, cinema, dna, motionImg, physics, youtubeLogo } from "../assets/gif";
+import { arjun, brianKouhi, conceptTalk, kamalesshBarariya, sadhana, tathastu } from "../assets/logo";
 
 const WhyChooseVideos = () => {
   return (
-    <div className="px-8 py-12 w-screen bg-black flex flex-col items-center justify-center">
+    <div className="px-8 py-12 w-screen bg-neutral-950 flex flex-col items-center justify-center">
       <h1 className="text-7xl font-bold text-center mb-12">
-        WHY <span className="font-medium text-6xl">Choose</span> Videos ?
+        WHY <span className="font-medium text-6xl text-blue-500">Choose</span>{" "}
+        Videos{" "}
+        <span className="text-blue-500">?</span> 
       </h1>
       <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
         {items.map((item, i) => (
@@ -34,83 +38,8 @@ const WhyChooseVideos = () => {
 
 export default WhyChooseVideos;
 
-
-
 const SkeletonOne = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 10,
-      rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
 
-  return (
-    <motion.div
-      initial="initial"
-      whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
-    >
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
-      <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
-      >
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-      </motion.div>
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
-    </motion.div>
-  );
-};
-const SkeletonTwo = () => {
-  const variants = {
-    initial: {
-      width: 0,
-    },
-    animate: {
-      width: "100%",
-      transition: {
-        duration: 0.2,
-      },
-    },
-    hover: {
-      width: ["0%", "100%"],
-      transition: {
-        duration: 2,
-      },
-    },
-  };
-  const arr = new Array(6).fill(0);
   return (
     <motion.div
       initial="initial"
@@ -118,46 +47,63 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      {arr.map((_, i) => (
-        <motion.div
-          key={"skelenton-two" + i}
-          variants={variants}
-          style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
-          }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
-      ))}
+      <video
+        className="rounded-xl p-1"
+        width="320"
+        height="240"
+        autoPlay
+        muted
+        loop
+      >
+        <source src={cinema} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </motion.div>
   );
 };
-const SkeletonThree = () => {
-  const variants = {
-    initial: {
-      backgroundPosition: "0 50%",
-    },
-    animate: {
-      backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
-    },
-  };
+const SkeletonTwo = () => {
+  
   return (
     <motion.div
       initial="initial"
       animate="animate"
-      variants={variants}
-      transition={{
-        duration: 5,
-        repeat: Infinity,
-        repeatType: "reverse",
-      }}
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
-      style={{
-        background:
-          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
-        backgroundSize: "400% 400%",
-      }}
+      whileHover="hover"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <motion.div className="h-full w-full rounded-lg"></motion.div>
+      <video
+        className="rounded-xl p-1"
+        width="320"
+        height="240"
+        autoPlay
+        muted
+        loop
+      >
+        <source src={beats} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </motion.div>
+  );
+};
+const SkeletonThree = () => {
+ 
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      whileHover="hover"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+    >
+      <video
+        className="rounded-xl p-1"
+        width="320"
+        height="240"
+        autoPlay
+        muted
+        loop
+      >
+        <source src={motionImg} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </motion.div>
   );
 };
@@ -194,7 +140,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src={brianKouhi}
           alt="avatar"
           height="100"
           width="100"
@@ -209,7 +155,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src={arjun}
           alt="avatar"
           height="100"
           width="100"
@@ -227,7 +173,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src={kamalesshBarariya}
           alt="avatar"
           height="100"
           width="100"
@@ -280,16 +226,14 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
-          alt="avatar"
+          src={arjun}
+          alt="Tapas Media"
           height="100"
           width="100"
           className="rounded-full h-10 w-10"
         />
         <p className="text-xs text-neutral-500">
-          In today’s fast-paced world, capturing and retaining attention is key.
-          I create compelling, engaging media content that amplifies your
-          brand’s voice and leaves a lasting impression
+          I create engaging media content that amplifies your brand's voice and captures attention.
         </p>
       </motion.div>
       <motion.div
@@ -297,9 +241,13 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
         <p className="text-xs text-neutral-500">
-          Let’s work together to take your brand to the next level.
+          Let’s work together to take it to the next level.
         </p>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <img
+          src={sadhana}
+          alt="conceptTalk"
+          className="h-10 w-10 rounded-full"
+        />
       </motion.div>
     </motion.div>
   );
@@ -316,7 +264,6 @@ const items = [
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Make Information Memorable with Video",
@@ -329,7 +276,6 @@ const items = [
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Unmatched Engagement",
@@ -343,7 +289,6 @@ const items = [
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "SEO Benefits",
@@ -356,21 +301,18 @@ const items = [
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
 
   {
     title: "Text Summarization",
     description: (
       <span className="text-sm">
-        Videos can reach a broader audience by providing content that's easy to
-        consume across various devices, including smartphones, tablets, and
-        computers, regardless of the viewer's reading ability or language
-        proficiency.
+        Videos can reach a wider audience by offering easily consumable content
+        across devices like smartphones, tablets, and computers, regardless of
+        reading ability or language proficiency.
       </span>
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];

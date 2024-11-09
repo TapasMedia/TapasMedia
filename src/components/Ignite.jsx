@@ -37,13 +37,13 @@ const Ignite = () => {
   return (
     <div
       className={cn(
-        "text-center flex flex-col justify-center items-center py-10 overflow-y-auto w-screen"
+        "text-center flex flex-col justify-center items-center py-10 overflow-y-auto w-screen bg-neutral-950"
       )}
       ref={gridRef}
     >
       <div className="text-7xl my-10 text-center grid-flow-col container">
         <WordPullUp
-          className="text-5xl md:text-7xl font-normal -translate-x-24 md:-translate-x-36 text-yellow-500"
+          className="text-5xl md:text-7xl font-normal -translate-x-24 md:-translate-x-36 text-blue-500"
           words="Video"
         />
         <WordPullUp
@@ -55,8 +55,8 @@ const Ignite = () => {
           words="your brand and spread"
         />
         <WordPullUp
-          className="text-5xl md:text-7xl font-normal  text-yellow-500"
-          words="like Wildlife"
+          className="text-5xl md:text-7xl font-normal  text-blue-500"
+          words="like Wildfire"
         />
       </div>
 
@@ -67,7 +67,7 @@ const Ignite = () => {
         </div>
       </div>
       <div className=" grid grid-cols-3 items-start max-w-[90vw] xl:max-w-[70vw] mx-auto md:gap-6 xl:gap-10 py-10 md:py-32 md:px-10 ">
-        <div className="grid gap-10">
+        <div className="grid gap-10 z-10">
           {firstPart.map((el, idx) => (
             <motion.div
               style={{ y: translateFirst, x: translateXFirst }}
@@ -75,7 +75,7 @@ const Ignite = () => {
             >
               <img
                 src={el}
-                className="w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 rotate-[-3deg] border-4 border-yellow-500"
+                className="w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 rotate-[-3deg] border border-red-700"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -88,7 +88,7 @@ const Ignite = () => {
             <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
               <img
                 src={el}
-                className="w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 border-4 border-yellow-500"
+                className="w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 border border-red-700"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -96,7 +96,7 @@ const Ignite = () => {
             </motion.div>
           ))}
         </div>
-        <div className="grid gap-10">
+        <div className="grid gap-10 z-10">
           {thirdPart.map((el, idx) => (
             <motion.div
               style={{ y: translateThird, x: translateXThird }}
@@ -104,7 +104,7 @@ const Ignite = () => {
             >
               <img
                 src={el}
-                className="w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 rotate-[3deg] border-4 border-yellow-500"
+                className="w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 rotate-[3deg] border border-red-700"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -113,6 +113,9 @@ const Ignite = () => {
           ))}
         </div>
       </div>
+
+      {/* <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-neutral-950"></div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-neutral-950"></div> */}
     </div>
   );
 }

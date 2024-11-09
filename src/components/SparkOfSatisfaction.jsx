@@ -69,20 +69,20 @@ const SparkOfSatisfaction = () => {
   return (
     <div
       className={cn(
-        "text-center flex flex-col justify-center items-center pt-10 overflow-y-auto bg-white w-screen text-black"
+        "text-center flex flex-col justify-center items-center pt-10 overflow-y-auto bg-neutral-950 w-screen text-white"
       )}
     >
-      <h2 className="text-7xl font-bold text-gray-800 container">
+      <h2 className="text-7xl font-Cambay font-bold text-blue-500 container">
         Spark of Satisfaction
       </h2>
-      <p className="text-lg text-gray-600 mt-2 container">
+      <p className="text-lg px-4 md:w-[70vw] text-zinc-300 mt-2  container">
         We are committed to delivering the best quality service to our clients.
         We believe in the power of video to transform your brand and we are
         dedicated to helping you achieve your goals.
       </p>
       <br />
-      <div className="container">
-        <div className="relative flex h-[500px] w-full flex-row items-center justify-center overflow-hidden">
+      <div className="container items-center flex justify-center">
+        <div className="relative flex h-[500px] md:w-[75vw] xl:h-[600px] flex-row items-center justify-center overflow-hidden">
           <Marquee pauseOnHover vertical className="[--duration:10s]">
             {firstRow.map((review) => (
               <ReviewCard key={review.username} {...review} />
@@ -93,7 +93,17 @@ const SparkOfSatisfaction = () => {
               <ReviewCard key={review.username} {...review} />
             ))}
           </Marquee>
-          
+          <Marquee
+            pauseOnHover
+            vertical
+            className="hidden md:flex [--duration:10s]"
+          >
+            {firstRow.map((review) => (
+              <ReviewCard key={review.username} {...review} />
+            ))}
+          </Marquee>
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-neutral-950"></div>
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-neutral-950"></div>
         </div>
       </div>
     </div>

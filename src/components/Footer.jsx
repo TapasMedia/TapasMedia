@@ -9,13 +9,13 @@ import { Dock, DockIcon } from "./ui/dock";
 
 const Footer = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-neutral-950">
       <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
           <div className="px-5 py-2">
             <a
               href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              className="text-base leading-6 text-gray-400 hover:text-gray-200"
             >
               Privacy Policy
             </a>
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="px-5 py-2">
             <a
               href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              className="text-base leading-6 text-gray-400 hover:text-gray-200"
             >
               Refund Policy
             </a>
@@ -31,28 +31,27 @@ const Footer = () => {
           <div className="px-5 py-2">
             <a
               href="#"
-              className="text-base leading-6 text-gray-500 hover:text-gray-900"
+              className="text-base leading-6 text-gray-400 hover:text-gray-200"
             >
               Terms of Use
             </a>
           </div>
-          
         </nav>
-        <div className="relative text-black">
-          <Dock magnification={60} distance={80}>
-            <DockIcon className="bg-black/10 dark:bg-white/10 p-2">
+        <div className="relative">
+          <Dock magnification={60} distance={80} className="border-gray-500">
+            <DockIcon className="bg-white/20 p-2 hover:bg-white/10">
               <Icons.instagram className="" />
             </DockIcon>
-            <DockIcon className="bg-black/10 dark:bg-white/10 p-2">
+            <DockIcon className="bg-white/20 p-2 hover:bg-white/10">
               <Icons.linkedIn className="size-full" />
             </DockIcon>
             <DockIcon
               magnification={40}
-              className="bg-black/10 dark:bg-white/10 p-2"
+              className="bg-white/20 p-2 hover:bg-white/10"
             >
               <Icons.youtube className="" />
             </DockIcon>
-            <DockIcon className="bg-black/10 dark:bg-white/10 p-2">
+            <DockIcon className="bg-white/20 p-2 hover:bg-white/10">
               <Icons.twitter className="size-full" />
             </DockIcon>
           </Dock>

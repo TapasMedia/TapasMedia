@@ -29,7 +29,7 @@ const Circle = forwardRef(({ className, children }, ref) => {
       }}
       ref={ref}
       className={cn(
-        "z-10 flex text-3xl size-24 items-center justify-center rounded-full border-2 bg-white shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+        "z-10 flex text-3xl size-20 sm:size-24 items-center justify-center rounded-full border-2 bg-white shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
         className
       )}
     >
@@ -55,12 +55,12 @@ const Connections = () => {
       <div className="relative w-screen bg-slate-950">
         <DotPattern
           className={cn(
-            "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]"
+            "[mask-image:radial-gradient(450px_circle_at_center,white,transparent)]"
           )}
-        />
-
+        />{" "}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-neutral-950"></div>
         <div
-          className="relative flex h-[80vh] w-full items-center text-black justify-center overflow-hidden rounded-lg bg-background pb-10 md:shadow-xl"
+          className="relative flex md:h-[80vh] w-full items-center text-black justify-center overflow-hidden rounded-lg bg-background pb-10 md:shadow-xl px-3"
           ref={containerRef}
         >
           <div className="flex size-full flex-col max-w-3xl max-h-[50vh] items-stretch justify-between gap-10">
@@ -91,7 +91,7 @@ const Connections = () => {
                 />
                 {/* <RiNotionFill /> */}
               </Circle>
-              <Circle ref={div4Ref} className="size-28 text-5xl">
+              <Circle ref={div4Ref} className="size-24 sm:size-28">
                 <img
                   className="rounded-full"
                   src={tapasMedia}
@@ -120,14 +120,14 @@ const Connections = () => {
             containerRef={containerRef}
             fromRef={div1Ref}
             toRef={div4Ref}
-            duration={5}
+            // duration={5}
             pathWidth={4}
             curvature={-125}
             endYOffset={-15}
           />
           <AnimatedBeam
             containerRef={containerRef}
-            duration={5}
+            // duration={5}
             pathWidth={4}
             fromRef={div2Ref}
             toRef={div4Ref}
@@ -136,7 +136,7 @@ const Connections = () => {
             containerRef={containerRef}
             fromRef={div3Ref}
             toRef={div4Ref}
-            duration={5}
+            // duration={5}
             pathWidth={4}
             curvature={125}
             endYOffset={15}
@@ -145,7 +145,7 @@ const Connections = () => {
             containerRef={containerRef}
             fromRef={div5Ref}
             toRef={div4Ref}
-            duration={5}
+            // duration={5}
             pathWidth={4}
             curvature={-125}
             endYOffset={-15}
@@ -155,7 +155,7 @@ const Connections = () => {
             containerRef={containerRef}
             fromRef={div6Ref}
             toRef={div4Ref}
-            duration={5}
+            // duration={5}
             pathWidth={4}
             reverse
           />
@@ -163,7 +163,7 @@ const Connections = () => {
             containerRef={containerRef}
             fromRef={div7Ref}
             toRef={div4Ref}
-            duration={5}
+            // duration={5}
             pathWidth={4}
             curvature={125}
             endYOffset={15}

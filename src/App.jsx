@@ -27,7 +27,7 @@ function App() {
       <HeroPage />
       <Connections />
       <WhyUs />
-      <Impact/>
+      {/* <Impact/> */}
       <Ignite />
       <SparkOfSatisfaction />
       <TimelinePage />
