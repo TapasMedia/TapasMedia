@@ -4,8 +4,58 @@ import { AnimatePresence, motion } from "framer-motion";
 import { focus, production, business, connection, socialMedia } from "../assets/svgs";
 import JoinButton from "./ui/custom/JoinButton";
 import ChooseUsCard from "./ui/custom/ChooseUsCard";
-import { community, growthImg, studio, telescope } from "../assets/images";
+import {
+  community,
+  growthImg,
+  studio,
+  telescope,
+  bussinessSuccess,
+  expertEnhancing,
+  flatLayStatistics,
+  handShaking,
+  greatJob,
+} from "../assets/images";
 import GradualSpacing from "./ui/gradual-spacing";
+import { AnimatedTestimonials } from "./ui/animated-testimonials";
+
+
+ const testimonials = [
+   {
+     quote:
+       "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+     name: "Personalized Edits",
+     //  designation: "CTO at InnovateSphere",
+     src: expertEnhancing,
+   },
+   {
+     quote:
+       "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+     name: "Sarah Chen",
+     //  designation: "Product Manager at TechFlow",
+     src: bussinessSuccess,
+   },
+   {
+     quote:
+       "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+     name: "Strategic Growth",
+     //  designation: "Operations Director at CloudScale",
+     src: flatLayStatistics,
+   },
+   {
+     quote:
+       "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+     name: "James Kim",
+     //  designation: "Engineering Lead at DataPro",
+     src: handShaking,
+   },
+   {
+     quote:
+       "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+     name: "Lisa Thompson",
+     //  designation: "VP of Technology at FutureNet",
+     src: greatJob,
+   },
+ ];
 
 const WhyUs = () => {
   const fadeIn = {
@@ -29,7 +79,7 @@ const WhyUs = () => {
               text="Why Choose Us?"
             />
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-4 max-w-[80vw] gap-6 container opacity-80">
+          {/* <div className="grid grid-cols-1 md:grid-cols-4 max-w-[80vw] gap-6 container opacity-80">
             <ChooseUsCard
               image={studio}
               heading="Personalized Edits"
@@ -52,7 +102,10 @@ const WhyUs = () => {
               content="A sleek, attention-grabbing video reel showcasing highlights of
                 your best work"
             />
-          </div>
+          </div> */}
+
+          <AnimatedTestimonials testimonials={testimonials} />
+
           <div className="flex flex-col py-14 md:py-0 md:mt-8 justify-center items-center">
             <JoinButton>Book a Call</JoinButton>
             <span className="p-4 text-blue-400/80 font-semibold">
