@@ -15,12 +15,17 @@ const Navbar = () => {
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Contact",
-      link: "/#contact",
-      icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
+      name: "Steps",
+      link: "/#steps",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
+    // {
+    //   name: "Benefits",
+    //   link: "/#benefits",
+    //   icon: (
+    //     <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+    //   ),
+    // },
   ];
   return (
       <FloatingNav navItems={navItems} />

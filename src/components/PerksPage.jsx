@@ -117,7 +117,7 @@ const PerksPage = () => {
    },
  ];
   return (
-    <div className="w-screen bg-neutral-950">
+    <div className="w-screen bg-neutral-950" id='benefits'>
       {/* <h1 className="text-4xl font-bold text-center text-indigo-900 mb-12 tracking-tight font-Cambay">
         PERKS OF TAPAS MEDIA
       </h1> */}

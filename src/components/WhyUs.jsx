@@ -22,36 +22,36 @@ import { AnimatedTestimonials } from "./ui/animated-testimonials";
  const testimonials = [
    {
      quote:
-       "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+       "We craft each project with meticulous attention to detail, tailoring edits to reflect your unique style and brand identity. Our customized approach ensures that the final product resonates with your audience and enhances your brand’s storytelling.",
      name: "Personalized Edits",
      //  designation: "CTO at InnovateSphere",
      src: expertEnhancing,
    },
    {
      quote:
-       "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-     name: "Sarah Chen",
+       "We prioritize a deep understanding of your brand’s vision, objectives, and target audience to deliver tailored, high-impact content. Our team collaborates closely with you at each stage, ensuring that every detail aligns with your brand and exceeds expectations",
+     name: "Client-Centric Approach",
      //  designation: "Product Manager at TechFlow",
      src: bussinessSuccess,
    },
    {
      quote:
-       "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+       "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.We are dedicated to driving sustainable growth by creating media solutions that not only meet immediate objectives but also support your long-term vision, helping to expand your brand's reach and impact.",
      name: "Strategic Growth",
      //  designation: "Operations Director at CloudScale",
      src: flatLayStatistics,
    },
    {
      quote:
-       "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-     name: "James Kim",
+       "Our team enhances your content with carefully curated visuals that amplify your message and engage your audience. From compelling graphics to seamless animations, we ensure that every visual element is designed to support and elevate your story, adding depth and professionalism to your brand’s narrative.",
+     name: "Supporting Visuals",
      //  designation: "Engineering Lead at DataPro",
      src: handShaking,
    },
    {
      quote:
-       "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-     name: "Lisa Thompson",
+       "We create versatile content optimized for multiple platforms, ensuring your message reaches and resonates with audiences wherever they are. By adapting visuals, formats, and messaging for each platform, we help maximize your brand’s visibility, engagement, and impact across digital channels.",
+     name: "Cross-Platform Impact",
      //  designation: "VP of Technology at FutureNet",
      src: greatJob,
    },
@@ -65,7 +65,7 @@ const WhyUs = () => {
 
   return (
     <AnimatePresence mode="wait">
-      <div className="bg-neutral-950 w-screen min-h-screen flex flex-col items-center justify-center text-white ">
+      <div className="bg-neutral-950 w-screen min-h-screen flex flex-col items-center justify-center text-white " id="about">
         <motion.div
           initial="hidden"
           animate="visible"

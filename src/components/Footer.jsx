@@ -39,19 +39,54 @@ const Footer = () => {
         </nav>
         <div className="relative">
           <Dock magnification={60} distance={80} className="border-gray-500">
-            <DockIcon className="bg-white/20 p-2 hover:bg-white/10">
+            <DockIcon
+              magnification={40}
+              className="bg-white/20 p-2 hover:bg-white/10"
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/tapas_media",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            >
               <Icons.instagram className="" />
             </DockIcon>
-            <DockIcon className="bg-white/20 p-2 hover:bg-white/10">
+            <DockIcon
+              className="bg-white/20 p-2 hover:bg-white/10"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/company/tapasmediahouse/",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            >
               <Icons.linkedIn className="size-full" />
             </DockIcon>
             <DockIcon
               magnification={40}
               className="bg-white/20 p-2 hover:bg-white/10"
+              onClick={() =>
+                window.open(
+                  "https://youtube.com/@tapasmedia-j3j?si=j7JBumDY5-l0yWUS",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
             >
               <Icons.youtube className="" />
             </DockIcon>
-            <DockIcon className="bg-white/20 p-2 hover:bg-white/10">
+            <DockIcon
+              className="bg-white/20 p-2 hover:bg-white/10"
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/tapas_media",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            >
               <Icons.twitter className="size-full" />
             </DockIcon>
           </Dock>

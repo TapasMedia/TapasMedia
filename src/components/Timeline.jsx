@@ -1,6 +1,7 @@
 import React from 'react'
 import { WordPullUp } from './ui/word-pull-up'
 import { Timeline } from './ui/timeline'
+import { editing1, editing2, editing3, editing4,editing5, marketing1, marketing2, marketing3, marketing4, research1, research2, research3, research4, setting1, setting2, setting3, setting4, setting5 } from '../assets/timeline';
 
 const TimelinePage = () => {
 
@@ -16,28 +17,28 @@ const TimelinePage = () => {
          </p>
          <div className="grid grid-cols-2 gap-4">
            <img
-             src="https://assets.aceternity.com/templates/startup-1.webp"
+             src={setting2}
              alt="startup template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/templates/startup-2.webp"
+             src={setting4}
              alt="startup template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/templates/startup-3.webp"
+             src={setting5}
              alt="startup template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/templates/startup-4.webp"
+             src={setting1}
              alt="startup template"
              width={500}
              height={500}
@@ -63,28 +64,28 @@ const TimelinePage = () => {
          </p>
          <div className="grid grid-cols-2 gap-4">
            <img
-             src="https://assets.aceternity.com/pro/hero-sections.png"
+             src={research1}
              alt="hero template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/features-section.png"
+             src={research2}
              alt="feature template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/pro/bento-grids.png"
+             src={research3}
              alt="bento template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/cards.png"
+             src={research4}
              alt="cards template"
              width={500}
              height={500}
@@ -109,47 +110,30 @@ const TimelinePage = () => {
            alignment with your brand goals. We handle every detail to amplify
            your message and build a lasting connection with your audience.
          </p>
-         {/* <div className="mb-8">
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Card grid component
-           </div>
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Startup template Aceternity
-           </div>
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Random file upload lol
-           </div>
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Himesh Reshammiya Music CD
-           </div>
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Salman Bhai Fan Club registrations open
-           </div>
-         </div> */}
          <div className="grid grid-cols-2 gap-4">
            <img
-             src="https://assets.aceternity.com/pro/hero-sections.png"
+             src={editing1}
              alt="hero template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/features-section.png"
+             src={editing4}
              alt="feature template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/pro/bento-grids.png"
+             src={editing3}
              alt="bento template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/cards.png"
+             src={editing5}
              alt="cards template"
              width={500}
              height={500}
@@ -168,47 +152,31 @@ const TimelinePage = () => {
            backend systems and automation processes that drive consistent,
            reliable organic leads and sales.
          </p>
-         {/* <div className="mb-8">
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Card grid component
-           </div>
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Startup template Aceternity
-           </div>
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Random file upload lol
-           </div>
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Himesh Reshammiya Music CD
-           </div>
-           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-             ✅ Salman Bhai Fan Club registrations open
-           </div>
-         </div> */}
+
          <div className="grid grid-cols-2 gap-4">
            <img
-             src="https://assets.aceternity.com/pro/hero-sections.png"
+             src={marketing1}
              alt="hero template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/features-section.png"
+             src={marketing2}
              alt="feature template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/pro/bento-grids.png"
+             src={marketing3}
              alt="bento template"
              width={500}
              height={500}
              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
            />
            <img
-             src="https://assets.aceternity.com/cards.png"
+             src={marketing4}
              alt="cards template"
              width={500}
              height={500}
@@ -221,7 +189,7 @@ const TimelinePage = () => {
  ];
 
   return (
-    <div className="flex justify-center bg-neutral-950 items-center flex-col py-14 w-screen">
+    <div className="flex justify-center bg-neutral-950 items-center flex-col py-14 w-screen" id='steps'>
       <div className="flex -translate-x-7">
         <WordPullUp
           className=" tracking-[10] text-xl md:text-3xl lg:text-4xl font-light"

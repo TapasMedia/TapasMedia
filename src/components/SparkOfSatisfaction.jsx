@@ -2,62 +2,46 @@ import React from 'react'
 import { cn } from '../lib/utils'
 import ReviewCard from './ui/custom/ReviewCard'
 import { Marquee } from './ui/marque';
+import { conceptTalk, tathastu, vedology } from '../assets/logo';
+import { manishChauhan } from '../assets/cluster';
 
 const reviews = [
   {
     name: "Rakesh Ranjan",
     username: "@concepttalk",
     body: "Incredible editing that truly brought my vision to life!",
-    img: "https://avatar.vercel.sh/jack",
+    img: conceptTalk,
   },
   {
     name: "Lalit Jangir",
     username: "@themealstory",
     body: "The final product was both professional and highly engaging. ",
-    img: "https://avatar.vercel.sh/jack",
+    img: "https://pbs.twimg.com/profile_images/1715346591245352960/JCpHHhz7_200x200.jpg",
   },
   {
     name: "Parag Bhatt",
     username: "@vedology",
     body: "Fast, professional, and delivered exactly what I wanted.",
-    img: "https://avatar.vercel.sh/jill",
+    img: vedology,
   },
   {
     name: "Tathastu",
     username: "@tathastu",
     body: "Creative, efficient, and high-quality editing throughout.",
-    img: "https://avatar.vercel.sh/jack",
+    img: tathastu,
   },
   {
     name: "Manish Chauhan",
     username: "@themonkfilms",
     body: "Quick turnaround with top-notch, professional results!",
-    img: "https://avatar.vercel.sh/jill",
+    img: manishChauhan,
   },
   {
     name: "Satwik Gupta",
     username: "@satwikbanarasiya",
     body: "Amazing attention to detail and flawless execution.",
-    img: "https://avatar.vercel.sh/john",
+    img: "https://pbs.twimg.com/profile_images/1790350923321196544/8O5d4l8X_200x200.jpg",
   },
-  // {
-  //   name: "John",
-  //   username: "@john",
-  //   body: "A brilliant storyteller who transformed my footage beautifully.",
-  //   img: "https://avatar.vercel.sh/john",
-  // },
-  // {
-  //   name: "John",
-  //   username: "@john",
-  //   body: "Worth every penny for such high-quality work!",
-  //   img: "https://avatar.vercel.sh/john",
-  // },
-  // {
-  //   name: "John",
-  //   username: "@john",
-  //   body: "Superb editing that made my video truly engaging and memorable.",
-  //   img: "https://avatar.vercel.sh/john",
-  // },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
