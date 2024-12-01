@@ -4,6 +4,7 @@ const ChooseUsCard = ({image, heading, content}) => {
   return (
     <div className="mt-10 flex flex-col items-center justify-center">
       <img
+              loading="lazy"
         className="h-32 md:h-44 xl:h-64 bg-blend-multiply bg-opacity-50 rounded-lg"
         src={image}
         alt="target"

@@ -140,6 +140,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <img
+              loading="lazy"
           src={seo3}
           alt="avatar"
           height="100"
@@ -156,6 +157,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <img
+              loading="lazy"
           src={seo1 }
           alt="avatar"
           height="100"
@@ -174,6 +176,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <img
+              loading="lazy"
           src={seo2}
           alt="avatar"
           height="100"
@@ -228,6 +231,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
         <img
+              loading="lazy"
           src={arjun}
           alt="Tapas Media"
           height="100"
@@ -246,7 +250,8 @@ const SkeletonFive = () => {
           Let’s work together to take it to the next level.
         </p>
         <img
-          src={sadhana}
+              loading="lazy"
+          src={conceptTalk}
           alt="conceptTalk"
           className="h-10 w-10 rounded-full"
         />

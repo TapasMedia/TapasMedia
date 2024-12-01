@@ -19,7 +19,7 @@ const reviews = [
     img: "https://pbs.twimg.com/profile_images/1715346591245352960/JCpHHhz7_200x200.jpg",
   },
   {
-    name: "Parag Bhatt",
+    name: "Parakh Om Bhatt",
     username: "@vedology",
     body: "Fast, professional, and delivered exactly what I wanted.",
     img: vedology,

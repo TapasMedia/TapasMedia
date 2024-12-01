@@ -68,6 +68,7 @@ const Connections = () => {
               <Circle ref={div1Ref}>
                 {/* <FaGoogleDrive /> */}
                 <img
+              loading="lazy"
                   className="rounded-full"
                   src={brianKouhi}
                   alt="brian-kouhi"
@@ -75,6 +76,7 @@ const Connections = () => {
               </Circle>
               <Circle ref={div5Ref}>
                 <img
+              loading="lazy"
                   className="rounded-full"
                   src={kamalesshBarariya}
                   alt="kamalessh-barariya"
@@ -85,6 +87,7 @@ const Connections = () => {
             <div className="flex flex-row items-center justify-between">
               <Circle ref={div2Ref}>
                 <img
+              loading="lazy"
                   className="rounded-full"
                   src={conceptTalk}
                   alt="concept-talk"
@@ -93,6 +96,7 @@ const Connections = () => {
               </Circle>
               <Circle ref={div4Ref} className="size-24 sm:size-28">
                 <img
+              loading="lazy"
                   className="rounded-full"
                   src={tapasMedia}
                   alt="tapas-media"
@@ -100,17 +104,20 @@ const Connections = () => {
                 {/* <PiOpenAiLogo /> */}
               </Circle>
               <Circle ref={div6Ref}>
-                <img className="rounded-full" src={sadhana} alt="sadhana" />
+                <img
+              loading="lazy" className="rounded-full" src={sadhana} alt="sadhana" />
                 {/* <TbBrandZapier /> */}
               </Circle>
             </div>
             <div className="flex flex-row items-center justify-between">
               <Circle ref={div3Ref}>
-                <img className="rounded-full" src={tathastu} alt="tathastu" />
+                <img
+              loading="lazy" className="rounded-full" src={tathastu} alt="tathastu" />
                 {/* <FaWhatsapp /> */}
               </Circle>
               <Circle ref={div7Ref}>
-                <img className="rounded-full" src={vedology} alt="vedology" />
+                <img
+              loading="lazy" className="rounded-full" src={vedology} alt="vedology" />
                 {/* <FaFacebookMessenger /> */}
               </Circle>
             </div>
