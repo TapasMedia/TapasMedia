@@ -74,7 +74,6 @@ const Connections = () => {
                     <TooltipTrigger asChild>
                       <a href="">
                         <img
-                          loading="lazy"
                           className="rounded-full"
                           src={brianKouhi}
                           alt="brian-kouhi"
@@ -91,7 +90,6 @@ const Connections = () => {
                     <TooltipTrigger asChild>
                       <a href="">
                         <img
-                          loading="lazy"
                           className="rounded-full"
                           src={kamalesshBarariya}
                           alt="kamalessh-barariya"
@@ -111,7 +109,6 @@ const Connections = () => {
                     <TooltipTrigger asChild>
                       <a href="">
                         <img
-                          loading="lazy"
                           className="rounded-full"
                           src={conceptTalk}
                           alt="concept-talk"
@@ -129,7 +126,6 @@ const Connections = () => {
                     <TooltipTrigger asChild>
                       <a href="https://tapasmedia.in/">
                         <img
-                          loading="lazy"
                           className="rounded-full"
                           src={tapasMedia}
                           alt="tapas-media"
@@ -147,7 +143,6 @@ const Connections = () => {
                     <TooltipTrigger asChild>
                       <a href="">
                         <img
-                          loading="lazy"
                           className="rounded-full"
                           src={sadhana}
                           alt="sadhana"
@@ -166,7 +161,6 @@ const Connections = () => {
                     <TooltipTrigger asChild>
                       <a href="">
                         <img
-                          loading="lazy"
                           className="rounded-full"
                           src={tathastu}
                           alt="tathastu"
@@ -184,7 +178,6 @@ const Connections = () => {
                     <TooltipTrigger asChild>
                       <a href="">
                         <img
-                          loading="lazy"
                           className="rounded-full"
                           src={vedology}
                           alt="vedology"
